@@ -157,7 +157,7 @@ void swapout(int dwhere){
 int choosedvictim(){
     int k;
 
-    for(int k = 0; k <= DRAMMAX; k++){
+    for(k = 0; k <= DRAMMAX; k++){
         if(frame[k] != '_'){
             return k;
         }
