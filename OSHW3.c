@@ -228,34 +228,37 @@ int main() {
     }
 
     for(e = 1; e < 10000; e++){
-
         /*
-        if (rand() < RAND_MAX * .5) demandnew();
-        if (rand() < RAND_MAX * .5) demandfromswap();
-        if (rand() < RAND_MAX * .5) demandfromswap();
-        if (rand() < RAND_MAX * .5) demandfromswap();
-        if (rand() < RAND_MAX * .5) demandfromswap();
-        if (rand() < RAND_MAX * .5) demandfromswap();
-        if (rand() < RAND_MAX * .5) demandfromswap();
-        if (rand() < RAND_MAX * .8) freeframe();
-        if (rand() < RAND_MAX * .8) freeframe();
-        if (rand() < RAND_MAX * .8) freeframe();
-        if (rand() < RAND_MAX * .8) freeswap();
-        if (rand() < RAND_MAX * .8) freeswap();
-        if (rand() < RAND_MAX * .8) freeswap();
-        if (rand() < RAND_MAX * .8) freeswap();
-        if (rand() < RAND_MAX * .8) freeswap();
+        if (rand() < RAND_MAX * .5){
+            demandnew();
+        }
+        
+        for(i = 0; i < 6; i++){
+             if (rand() < RAND_MAX * .5){
+                demandfromswap();
+            }
+        }
 
-        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
-        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
-        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
-        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
-        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
+        for(i = 0; i < 3; i++){
+            if (rand() < RAND_MAX * .8){
+                freeframe();
+            }
+        }
+
+        for(int i = 0; i < 4; i++){
+             if (rand() < RAND_MAX * .8){
+                 freeswap();
+             }
+        }
+
+        for(int i = 0; i < 5; i++){
+             if (memfree() < .5*DRAMMAX) {
+                 if (rand() < RAND_MAX * .8){
+                 swapout(choosedvictim());
+                 }
+             }
+        }
          */
-
-
-
-
     }
 
     printf("Hello world");
