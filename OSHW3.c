@@ -213,3 +213,52 @@ void show(){
     sleep(msg[0] == 'S' && msg[1] == 'C' ? 4 : 1);
     
 }
+
+int main() {
+
+    int i, e, pid, pwhere, dwhich, which, j;
+
+    srand(time(NULL));
+    for(i = 1; i < DRAMMAX; i++){
+        frame[i] =  '_';
+    }
+
+    for(i = 1; i < PFMAX; i++){
+        swapFile[i] =  '_';
+    }
+
+    for(e = 1; e < 10000; e++){
+
+        /*
+        if (rand() < RAND_MAX * .5) demandnew();
+        if (rand() < RAND_MAX * .5) demandfromswap();
+        if (rand() < RAND_MAX * .5) demandfromswap();
+        if (rand() < RAND_MAX * .5) demandfromswap();
+        if (rand() < RAND_MAX * .5) demandfromswap();
+        if (rand() < RAND_MAX * .5) demandfromswap();
+        if (rand() < RAND_MAX * .5) demandfromswap();
+        if (rand() < RAND_MAX * .8) freeframe();
+        if (rand() < RAND_MAX * .8) freeframe();
+        if (rand() < RAND_MAX * .8) freeframe();
+        if (rand() < RAND_MAX * .8) freeswap();
+        if (rand() < RAND_MAX * .8) freeswap();
+        if (rand() < RAND_MAX * .8) freeswap();
+        if (rand() < RAND_MAX * .8) freeswap();
+        if (rand() < RAND_MAX * .8) freeswap();
+
+        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
+        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
+        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
+        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
+        if (memfree() < .5*DRAMMAX) if (rand() < RAND_MAX * .8) swapout(choosedvictim());
+         */
+
+
+
+
+    }
+
+    printf("Hello world");
+
+    return 0;
+}
